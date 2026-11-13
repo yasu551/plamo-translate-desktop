@@ -234,6 +234,14 @@ macOS では、上の開発用ビルドでも llama.cpp が Metal で GPU を使
 scripts/package-macos.sh
 ```
 
+ビルドした Mac にそのまま入れるには、代わりに `scripts/install-macos.sh` を実行します。
+同じ手順でパッケージを作り、起動中のアプリを終了させてから `/Applications/PLaMo Translate Desktop.app` を新しいバンドルに入れ替え、起動します。
+ディスクイメージは残しません。
+
+```sh
+scripts/install-macos.sh
+```
+
 ### 開発
 
 - `crates/pfml`: PFML3（PLaMo のプロンプト形式）のプロンプト構築。

@@ -243,6 +243,14 @@ The bundle is signed ad hoc, which Gatekeeper accepts only on the Mac that built
 scripts/package-macos.sh
 ```
 
+To install it on the Mac that built it, run `scripts/install-macos.sh` instead.
+It builds the package the same way, quits the app if it is running, replaces `/Applications/PLaMo Translate Desktop.app` with the new bundle, and starts it.
+The disk image is not kept.
+
+```sh
+scripts/install-macos.sh
+```
+
 ### Development
 
 - `crates/pfml`: PFML3 prompt builder (the PLaMo prompt format).
